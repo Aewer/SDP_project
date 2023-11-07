@@ -1,0 +1,42 @@
+Authentication successful. Username: slawa@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa321@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 3 Username: 
+Invalid login or password. Attempts left: 3 Username: dwadw
+Invalid login or password. Attempts left: 2 Username: dwadw
+Invalid login or password. Attempts left: 2 Username: dwadw
+Invalid login or password. Attempts left: 1 Username: dwadw
+Invalid login or password. Attempts left: 1 Username: dwadw
+Invalid login or password. Attempts left: 1 Username: dwadw
+0 Attempts left. Blocked. Username: dwadw
+0 Attempts left. Blocked. Username: dwadw
+0 Attempts left. Blocked. Username: dwadw
+0 Attempts left. Blocked. Username: dwadw
+Authentication successful. Username: slawa@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 2 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 2 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 2 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 1 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 1 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 1 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 1 Username: slawa@gmail.com
+0 Attempts left. Blocked. Username: slawa@gmail.com
+0 Attempts left. Blocked. Username: slawa@gmail.com
+0 Attempts left. Blocked. Username: slawa@gmail.com
+0 Attempts left. Blocked. Username: slawa@gmail.com
+0 Attempts left. Blocked. Username: slawa@gmail.com
+Invalid login or password. Attempts left: 3 Username: dwadwa
+Invalid login or password. Attempts left: 2 Username: dwadwa
+Invalid login or password. Attempts left: 2 Username: dwadwa
+Invalid login or password. Attempts left: 1 Username: dwadwa
+Invalid login or password. Attempts left: 1 Username: dwadwa
+Invalid login or password. Attempts left: 1 Username: dwadwa
+0 Attempts left. Blocked. Username: dwadwa
+0 Attempts left. Blocked. Username: dwadwa
+0 Attempts left. Blocked. Username: dwadwa
+0 Attempts left. Blocked. Username: dwadwa
+Invalid login or password. Attempts left: 3 Username: dwdwa
+Invalid login or password. Attempts left: 2 Username: dwdwa
+Invalid login or password. Attempts left: 2 Username: dwdwa
