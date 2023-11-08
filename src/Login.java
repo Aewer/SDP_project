@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.sql.*;
 
 public class Login {
@@ -15,7 +14,9 @@ public class Login {
     public void login() throws SQLException {
         publisher.addObserver(new ConsoleLogListener());
         publisher.addObserver(new FileLogListener("log.txt"));
+
         String encryptedPassword = Encryption.encrypt(password);
+
         try (Connection connection = dbConnection.getConnection()) {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from auth");
@@ -38,7 +39,6 @@ public class Login {
                 GUI.loginSuccess.setText("Invalid login or password, try again. Attempts left: " + att);
                 publisher.log("Invalid login or password. Attempts left: " + att + " Username: " + username);
                 att--;
-                System.out.println(att);
             }
         } catch (SQLException e) {
             e.printStackTrace();

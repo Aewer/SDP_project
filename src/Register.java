@@ -7,11 +7,11 @@ import java.sql.*;
 public class Register {
     private String username;
     private char[] password;
-    private boolean check1 = false, check2 = false, check3 = false;
+    //private boolean check1 = false, check2 = false, check3 = false;
     DbConnection dbConnection = DbConnection.getInstance();
     public Register() throws SQLException {
     }
-    public boolean checkEmail() {
+    /*public boolean checkEmail() {
         boolean result = true;
         try {
             InternetAddress emailAddr = new InternetAddress(username);
@@ -21,9 +21,9 @@ public class Register {
             result = false;
         }
         return result;
-    }
+    }*/
 
-    public boolean checkPassword() {
+    /*public boolean checkPassword() {
         if (password.length > 6) {
             for (int k = 0; k < password.length; k++) {
                 if (password[k] >= 48 && password[k] <= 57) {
@@ -45,7 +45,7 @@ public class Register {
             GUI.registerSuccess.setText("Registration error. Your password must be longer than 6 symbols.");
             return false;
         }
-    }
+    }*/
 
     public void registerToDatabase() throws SQLException {
         String passwordString = new String(password);
@@ -66,5 +66,11 @@ public class Register {
 
     public void setPassword(char[] password) {
         this.password = password;
+    }
+    public String getUsername() {
+        return username;
+    }
+    public char[] getPassword() {
+        return password;
     }
 }

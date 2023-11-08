@@ -40,3 +40,17 @@ Invalid login or password. Attempts left: 1 Username: dwadwa
 Invalid login or password. Attempts left: 3 Username: dwdwa
 Invalid login or password. Attempts left: 2 Username: dwdwa
 Invalid login or password. Attempts left: 2 Username: dwdwa
+Authentication successful. Username: qwerty@gmail.com
+Invalid login or password. Attempts left: 3 Username: email@gmail.com
+Authentication successful. Username: email@gmail.com
+Authentication successful. Username: email@gmail.com
+Authentication successful. Username: slawa123@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa123@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa123@gmail.com
+Invalid login or password. Attempts left: 3 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 2 Username: slawa@gmail.com
+Invalid login or password. Attempts left: 2 Username: slawa@gmail.com
+Authentication successful. Username: slawa@gmail.com
+Authentication successful. Username: slawa@gmail.com
+Authentication successful. Username: slawa@gmail.com
+Authentication successful. Username: slawa@gmail.com

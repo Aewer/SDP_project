@@ -6,6 +6,7 @@ import java.sql.SQLException;
 public class GUI {
     App app = new App();
     GUIFactory factory = new GUIFactory();
+    StateContext stateContext = new StateContext();
     public static JTextField emailTextReg;
     public static JPasswordField passwordTextReg;
     public static JLabel registerSuccess;
@@ -18,7 +19,7 @@ public class GUI {
     public GUI() throws SQLException {
     }
 
-    public void register() throws SQLException {
+    public void registerGUI() throws SQLException {
         JFrame frameReg = factory.makeFrame("Register", 500, 200);
         JPanel panelReg = new JPanel();
         panelReg.setLayout(null);
@@ -60,7 +61,7 @@ public class GUI {
                 new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         frameReg.setVisible(false);
-                        login();
+                        loginGUI();
                     }
                 }
         );
@@ -70,7 +71,7 @@ public class GUI {
         frameReg.setVisible(true);
     }
 
-    public void login() {
+    public void loginGUI() {
         JFrame frameLog = factory.makeFrame("Login", 500, 200);
         JPanel panelLog = new JPanel();
         panelLog.setLayout(null);
@@ -98,7 +99,7 @@ public class GUI {
                 new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         try {
-                            app.loginSequence();
+                            stateContext.login();
                         } catch (Exception ex) {
                             throw new RuntimeException(ex);
                         }
@@ -113,7 +114,7 @@ public class GUI {
                     public void actionPerformed(ActionEvent e) {
                         frameLog.setVisible(false);
                         try {
-                            register();
+                            registerGUI();
                         } catch (SQLException ex) {
                             throw new RuntimeException(ex);
                         }
@@ -121,6 +122,17 @@ public class GUI {
                 }
         );
         panelLog.add(buttonGoToRegister);
+
+        JButton buttonLogOut = new JButton("Log out");
+        buttonLogOut.setBounds(100, 80, 80, 25);
+        buttonLogOut.addActionListener(
+                new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        stateContext.logout();
+                    }
+                }
+        );
+        panelLog.add(buttonLogOut);
 
         frameLog.setVisible(true);
 

@@ -1,22 +1,20 @@
 import java.sql.*;
+import java.util.Arrays;
 
 public class App {
+    Validator validator = new Validator();
     public App() throws SQLException {
     }
     Register register = new Register();
-    Login login = new Login();
     public void registerSequence() throws SQLException {
         register.setUsername(GUI.emailTextReg.getText());
         register.setPassword(GUI.passwordTextReg.getText().toCharArray());
-        if (register.checkEmail()) {
-            if (register.checkPassword()) {
+        validator.setValidationStrategy(new EmailValidationStrategy());
+        if (validator.validate(register.getUsername())) {
+            validator.setValidationStrategy(new PasswordValidationStrategy());
+            if (validator.validate(Arrays.toString(register.getPassword()))) {
                 register.registerToDatabase();
             }
         }
-    }
-    public void loginSequence() throws SQLException {
-        login.setUsername(GUI.emailTextLog.getText());
-        login.setPassword(GUI.passwordTextLog.getText());
-        login.login();
     }
 }
